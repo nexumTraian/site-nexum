@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
@@ -26,42 +27,6 @@
     </nav>
   </header>
 
-  <!-- ACASA -->
-  <section id="acasa">
-    <h1>Sisteme Fotovoltaice la Cheie</h1>
-    <p>Consultanță, Proiectare, Instalare, Mentenanță – pentru acasă sau afacerea ta.</p>
-    <a href="#calculator" class="cta-button">Calculează Economiile</a>
-  </section>
-
-  <!-- DESPRE -->
-  <section id="despre">
-    <h2>Despre Nexum Energy</h2>
-    <p>Suntem o companie românească dedicată soluțiilor solare eficiente, sigure și durabile.</p>
-  </section>
-
-  <!-- SERVICII -->
-  <section id="servicii">
-    <h2>Serviciile Noastre</h2>
-    <ul>
-      <li>Consultanță personalizată</li>
-      <li>Proiectare tehnică</li>
-      <li>Instalare profesională</li>
-      <li>Mentenanță și suport continuu</li>
-    </ul>
-  </section>
-
-  <!-- PENTRU ACASA -->
-  <section id="rezidential">
-    <h2>Soluții pentru Acasă</h2>
-    <p>Economii lunare și independență energetică. Sistemul ideal pentru casa ta.</p>
-  </section>
-
-  <!-- PENTRU COMPANII -->
-  <section id="industrial">
-    <h2>Soluții pentru Companii</h2>
-    <p>Reducerea costurilor și creșterea eficienței energetice pentru afacerea ta.</p>
-  </section>
-
   <section id="echipamente">
     <h2>Echipamente de Top</h2>
     <p>Folosim doar echipamente performante și certificate, potrivite atât pentru sisteme rezidențiale cât și comerciale, până la 30 kW putere instalată și 41,6 kWh capacitate de stocare.</p>
@@ -73,7 +38,7 @@
       <li>Puteri disponibile: 370W – 550W</li>
       <li>Garanție: 12 ani produs, 25 ani performanță</li>
     </ul>
-    <img src="/mnt/data/cee5f41d-c831-42ba-8958-5bba54ba8517.png" alt="Panou LONGi" style="max-width: 300px;">
+    <img src="images/longi-panel.png" alt="Panou LONGi" style="max-width: 300px;">
 
     <h3>Invertoare GoodWe</h3>
     <ul>
@@ -82,7 +47,7 @@
       <li>Conectivitate: Wi-Fi, RS485, GPRS</li>
       <li>Monitorizare: aplicație mobilă & portal web</li>
     </ul>
-    <img src="/mnt/data/d3111892-6936-4077-b65b-482dbef98460.png" alt="Invertor GoodWe" style="max-width: 300px;">
+    <img src="images/goodwe-inverter.png" alt="Invertor GoodWe" style="max-width: 300px;">
 
     <h3>Baterii Dyness Tower</h3>
     <ul>
@@ -91,61 +56,27 @@
       <li>Durată de viață: >6000 cicluri</li>
       <li>Montaj: vertical, plug-and-play</li>
     </ul>
-    <img src="/mnt/data/9741860b-d9ff-480b-b4a5-a89f93b7f9d9.png" alt="Dyness Tower" style="max-width: 250px;">
-    <img src="/mnt/data/b1265b14-1380-49e0-b76e-1e328749d726.png" alt="Dyness Modular" style="max-width: 250px;">
-  </section>
-  <!-- PORTOFOLIU -->
-  <section id="portofoliu">
-    <h2>Proiecte Realizate</h2>
-    <div class="gallery">
-      <!-- Imagini proiecte -->
-    </div>
+    <img src="images/dyness-tower.png" alt="Dyness Tower" style="max-width: 250px;">
+    <img src="images/dyness-modular.png" alt="Dyness Modular" style="max-width: 250px;">
+    <img src="images/sistem-schema.png" alt="Schema sistem fotovoltaic" style="max-width: 600px;">
   </section>
 
-  <!-- TESTIMONIALE -->
-  <section id="testimoniale">
-    <h2>Ce Spun Clienții Noștri</h2>
-    <blockquote>„Profesioniști, rapizi și corecți. Recomand 100%!”</blockquote>
-    <blockquote>„Sistemul instalat de Nexum ne economisește sute de lei lunar.”</blockquote>
-  </section>
+  <section id="contact">
+    <h2>Contactează-ne</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="5f903ea5-e926-4396-aea2-57573e12da05">
+      <input type="hidden" name="subject" value="Mesaj nou de pe site Nexum Energy">
+      <input type="hidden" name="redirect" value="https://nexum-energy.ro/multumim.html">
+      <input type="hidden" name="_captcha" value="false">
 
-  <!-- BLOG -->
-  <section id="blog">
-    <h2>Articole & Noutăți</h2>
-    <article>
-      <h3>Ghidul Prosumatorului în 2025</h3>
-      <p>Ce înseamnă să fii prosumator, care sunt beneficiile și ce pași urmează.</p>
-    </article>
-  </section>
-
-  <!-- CALCULATOR ECONOMII -->
-  <section id="calculator">
-    <h2>Calculator de Economie</h2>
-    <form id="calc-form">
-      <label for="consum">Consum lunar (kWh):</label>
-      <input type="number" id="consum" name="consum" required>
-      <button type="submit">Calculează</button>
+      <input type="text" name="nume" placeholder="Nume" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="mesaj" placeholder="Mesajul tău" required></textarea>
+      <button type="submit">Trimite</button>
     </form>
-    <div id="rezultat"></div>
+    <p>Telefon: <a href="tel:+40761132523">0761 132 523</a></p>
+    <p>Email: <a href="mailto:tbrehui@gmail.com">tbrehui@gmail.com</a></p>
   </section>
-  <!-- CONTACT -->
- <section id="contact">
-  <h2>Contactează-ne</h2>
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="5f903ea5-e926-4396-aea2-57573e12da05">
-    <input type="hidden" name="subject" value="Mesaj nou de pe site Nexum Energy">
-    <input type="hidden" name="redirect" value="https://nexum-energy.ro/multumim.html">
-    <input type="hidden" name="_next" value="https://nexum-energy.ro/multumim.html">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_subject" value="Mesaj nou de pe site Nexum Energy">
-    <input type="text" name="nume" placeholder="Nume" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="mesaj" placeholder="Mesajul tău" required></textarea>
-    <button type="submit">Trimite</button>
-  </form>
-  <p>Telefon: <a href="tel:+40761132523">0761 132 523</a></p>
-  <p>Email: <a href="mailto:tbrehui@gmail.com">tbrehui@gmail.com</a></p>
-</section>
 
   <footer>
     <p>&copy; 2025 Nexum Energy. Toate drepturile rezervate.</p>
