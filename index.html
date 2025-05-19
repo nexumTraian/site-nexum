@@ -3,16 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nexum Energy – Sisteme Fotovoltaice Profesionale</title>
+  <title>Nexum Energy – Sisteme Fotovoltaice</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function () {
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('.nav-links');
+      burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+      });
+    });
+  </script>
+  <style>
+    .burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+    }
+    @media (max-width: 768px) {
+      .burger {
+        display: flex;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #1e293b;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        padding: 1rem;
+      }
+      .nav-links.nav-active {
+        display: flex;
+      }
+      .nav-links li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav>
       <div class="logo">Nexum Energy</div>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <ul class="nav-links">
-        <li><a href="index.html">Acasă</a></li>
+        <li><a href="index.html" class="active">Acasă</a></li>
         <li><a href="despre.html">Despre</a></li>
         <li><a href="servicii.html">Servicii</a></li>
         <li><a href="rezidential.html">Rezidențial</a></li>
@@ -20,58 +68,17 @@
         <li><a href="echipamente.html">Echipamente</a></li>
         <li><a href="calculator.html">Calculator</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="casa-verde.html">Casa Verde</a></li>
+        <li><a href="electric-up.html">Electric Up</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="acasa">
-      <h1>Soluții Solare Inteligente pentru Viitorul Tău Energetic</h1>
-      <p>Nexum Energy oferă sisteme fotovoltaice personalizate, durabile și complet automatizate, pentru locuințe și afaceri care doresc eficiență, independență și control.</p>
-      <img src="images/longi-panel.png" alt="Panouri LONGi" style="max-width: 320px;">
-      <div>
-        <a href="calculator.html" class="cta-button">Calculează economiile</a>
-        <a href="contact.html" class="cta-button">Cere ofertă</a>
-      </div>
-    </section>
-
-    <section id="prezentare">
-      <h2>De ce să alegi Nexum Energy?</h2>
-      <ul>
-        <li><strong>Consultanță completă</strong> – analizăm nevoile tale și oferim soluții optime, fără costuri ascunse.</li>
-        <li><strong>Echipamente premium</strong> – folosim doar branduri de top: LONGi, GoodWe, Dyness.</li>
-        <li><strong>Instalare autorizată</strong> – echipe proprii, rapide, cu certificare ANRE.</li>
-        <li><strong>Monitorizare 24/7</strong> – prin aplicații web și mobile, control total al consumului și producției.</li>
-      </ul>
-    </section>
-
-    <section id="echipamente-preview">
-      <h2>Echipamente de top</h2>
-      <p>Componente performante pentru sisteme fotovoltaice de până la <strong>30kW putere instalată</strong> și <strong>41.6kWh capacitate de stocare</strong>.</p>
-      <div class="grid">
-        <div class="card">
-          <img src="images/longi-panel.png" alt="LONGi">
-          <h3>Panouri LONGi</h3>
-          <p>Eficiență până la 21.7%, garanție 25 ani, performanță superioară în condiții reale.</p>
-        </div>
-        <div class="card">
-          <img src="images/goodwe-inverter.png" alt="GoodWe">
-          <h3>Invertoare GoodWe</h3>
-          <p>Conectivitate inteligentă, eficiență 98.6%, compatibil on-grid și hybrid.</p>
-        </div>
-        <div class="card">
-          <img src="images/dyness-tower.png" alt="Dyness">
-          <h3>Baterii Dyness</h3>
-          <p>Stocare modulară, tehnologie LiFePO4, scalabilitate până la 41.6kWh.</p>
-        </div>
-      </div>
-      <a href="echipamente.html" class="cta-button">Vezi detalii tehnice</a>
-    </section>
-
-    <section id="call-to-action">
-      <h2>Investește în independența ta energetică</h2>
-      <p>Economisește bani, crește valoarea proprietății și protejează mediul înconjurător. Nexum Energy îți oferă totul – de la idee la energie.</p>
-      <a href="contact.html" class="cta-button">Solicită consultanță</a>
+    <section>
+      <h1>Bine ai venit la Nexum Energy</h1>
+      <p>Specialiști în soluții fotovoltaice pentru locuințe, companii și instituții. Proiectare, montaj, mentenanță – complet!</p>
+      <a href="contact.html" class="cta-button">Solicită ofertă</a>
     </section>
   </main>
 
