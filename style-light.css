@@ -31,15 +31,16 @@ header {
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5rem 1rem;
 }
 
 .nav-links li {
-  display: block;
+  display: inline-block;
+  margin-right: 1rem;
 }
 
 .nav-links a {
@@ -144,13 +145,6 @@ img.zoomable:active {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
   section {
     padding: 1.25rem;
   }
