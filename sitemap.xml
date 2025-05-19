@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://site-nexum.vercel.app/</loc>
-    <priority>1.00</priority>
-  </url>
-  <url><loc>https://site-nexum.vercel.app/despre.html</loc></url>
+  <url><loc>https://site-nexum.vercel.app/</loc></url>
   <url><loc>https://site-nexum.vercel.app/servicii.html</loc></url>
+  <url><loc>https://site-nexum.vercel.app/casa-verde.html</loc></url>
+  <url><loc>https://site-nexum.vercel.app/electric-up.html</loc></url>
+  <url><loc>https://site-nexum.vercel.app/despre.html</loc></url>
   <url><loc>https://site-nexum.vercel.app/rezidential.html</loc></url>
   <url><loc>https://site-nexum.vercel.app/industrial.html</loc></url>
   <url><loc>https://site-nexum.vercel.app/echipamente.html</loc></url>
