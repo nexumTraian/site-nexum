@@ -142,9 +142,21 @@ img.zoomable:active {
 
 @media (max-width: 768px) {
   .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
   }
+
+  section {
+    padding: 1.25rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}
 
   section {
     padding: 1.25rem;
