@@ -5,16 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexum Energy – Sisteme Fotovoltaice</title>
   <link rel="stylesheet" href="style.css">
-  <script defer>
-    document.addEventListener("DOMContentLoaded", function () {
-      const burger = document.querySelector('.burger');
-      const nav = document.querySelector('.nav-links');
-      burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-      });
-    });
-  </script>
   <style>
+    nav {
+      position: relative;
+    }
     .burger {
       display: none;
       flex-direction: column;
@@ -29,16 +23,17 @@
     @media (max-width: 768px) {
       .burger {
         display: flex;
+        z-index: 1001;
       }
       .nav-links {
         display: none;
         flex-direction: column;
         background-color: #1e293b;
         position: absolute;
-        top: 70px;
+        top: 60px;
         left: 0;
         width: 100%;
-        z-index: 999;
+        z-index: 1000;
         padding: 1rem;
       }
       .nav-links.nav-active {
@@ -49,6 +44,17 @@
       }
     }
   </style>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function () {
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('.nav-links');
+      if (burger && nav) {
+        burger.addEventListener('click', () => {
+          nav.classList.toggle('nav-active');
+        });
+      }
+    });
+  </script>
 </head>
 <body>
   <header>
