@@ -3,66 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produse și Servicii – Nexum Energy</title>
+  <title>Contact – Nexum Energy</title>
   <link rel="stylesheet" href="style-dark.css">
-  <style>
-    .product-section {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 2rem;
-      margin-bottom: 3rem;
-    }
-    .product-section img {
-      max-width: 300px;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    .product-description {
-      flex: 1;
-    }
-    .popup {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      z-index: 1000;
-      justify-content: center;
-      align-items: center;
-    }
-    .popup-content {
-      background: #1e293b;
-      padding: 1rem;
-      border-radius: 10px;
-      max-width: 90%;
-      max-height: 90%;
-    }
-    .popup-content embed {
-      width: 100%;
-      height: 80vh;
-    }
-    .close-btn {
-      background: #22d3ee;
-      color: #0f172a;
-      border: none;
-      padding: 0.5rem 1rem;
-      margin-top: 1rem;
-      cursor: pointer;
-      border-radius: 6px;
-    }
-  </style>
-  <script>
-    function openPopup(id) {
-      document.getElementById(id).style.display = 'flex';
-    }
-    function closePopup(id) {
-      document.getElementById(id).style.display = 'none';
-    }
-  </script>
 </head>
 <body>
   <header>
@@ -70,79 +12,42 @@
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Acasă</a></li>
-        <li><a href="produse-servicii.html" class="active">Produse și Servicii</a></li>
-        <li><a href="proiectare-instalare.html">Proiectare și Instalare</a></li>
-        <li><a href="beneficii-avantaje.html">Beneficii și Avantaje</a></li>
-        <li><a href="finantare-incentive.html">Finanțare și Incentive</a></li>
-        <li><a href="despre-noi.html">Despre Noi</a></li>
-        <li><a href="contact.html">Contact și Suport</a></li>
+        <li><a href="produse-servicii.html">Produse</a></li>
+        <li><a href="proiectare-instalare.html">Proiectare</a></li>
+        <li><a href="beneficii-avantaje.html">Avantaje</a></li>
+        <li><a href="finantare-incentive.html">Finanțare</a></li>
+        <li><a href="despre-noi.html">Despre</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section>
-      <h1>Produse și Servicii</h1>
+      <h1>Contactează-ne</h1>
+      <p>Ai nevoie de informații, consultanță sau ofertă personalizată? Trimite-ne un mesaj și revenim rapid!</p>
 
-      <div class="product-section">
-        <img src="images/panou-longi.jpg" alt="Panou fotovoltaic LONGi" onclick="openPopup('popup1')">
-        <div class="product-description">
-          <h2>Panou Fotovoltaic LONGi</h2>
-          <ul>
-            <li>Tehnologie: Half-cell mono PERC</li>
-            <li>Putere: 550 Wp</li>
-            <li>Eficiență: peste 21%</li>
-            <li>Garanție: 25 ani producție</li>
-          </ul>
-        </div>
-      </div>
+      <form action="https://formsubmit.co/tbrehui@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Numele complet" required />
+        <input type="email" name="email" placeholder="Adresa de email" required />
+        <textarea name="message" rows="6" placeholder="Mesajul tău" required></textarea>
+        <button type="submit">Trimite</button>
+      </form>
 
-      <div class="product-section">
-        <img src="images/invertor-goodwe.jpg" alt="Invertor GoodWe" onclick="openPopup('popup2')">
-        <div class="product-description">
-          <h2>Invertor GoodWe</h2>
-          <ul>
-            <li>Puteri disponibile: 3 kW – 30 kW</li>
-            <li>Tip: On-grid / Hybrid</li>
-            <li>Interfață WiFi + aplicație</li>
-            <li>Protecții integrate și eficiență > 98%</li>
-          </ul>
+      <div class="card-container" style="margin-top: 2rem">
+        <div class="card">
+          <h3>Telefon</h3>
+          <p><a href="tel:+40761132523">+40 761 132 523</a></p>
+        </div>
+        <div class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:tbrehui@gmail.com">tbrehui@gmail.com</a></p>
+        </div>
+        <div class="card">
+          <h3>Adresă</h3>
+          <p>București, România</p>
         </div>
       </div>
-
-      <div class="product-section">
-        <img src="images/baterie-dyness.jpg" alt="Baterie modulară Dyness" onclick="openPopup('popup3')">
-        <div class="product-description">
-          <h2>Baterie modulară Dyness Tower</h2>
-          <ul>
-            <li>Tehnologie: LiFePO4</li>
-            <li>Capacitate: până la 41.6 kWh</li>
-            <li>Tensiune: 48V/High Voltage</li>
-            <li>Garanție: 10 ani</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Popups -->
-      <div class="popup" id="popup1">
-        <div class="popup-content">
-          <embed src="pdf/LR_7_54_HTH_455_465_M_30_30_and_15_Frame_Explorer_20240511_V2_86a1a64e12.pdf" type="application/pdf">
-          <button class="close-btn" onclick="closePopup('popup1')">Închide</button>
-        </div>
-      </div>
-      <div class="popup" id="popup2">
-        <div class="popup-content">
-          <embed src="pdf/24_-_GoodWe_EH_PLUS__EN_GW_EH_PLUS__(16A)_Datasheet.pdf" type="application/pdf">
-          <button class="close-btn" onclick="closePopup('popup2')">Închide</button>
-        </div>
-      </div>
-      <div class="popup" id="popup3">
-        <div class="popup-content">
-          <embed src="pdf/Dyness_Battery_Specs_Page15.pdf" type="application/pdf">
-          <button class="close-btn" onclick="closePopup('popup3')">Închide</button>
-        </div>
-      </div>
-
     </section>
   </main>
 
