@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proiectare și Instalare – Nexum Energy</title>
+  <link rel="stylesheet" href="style-dark.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Nexum Energy</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="produse-servicii.html">Produse și Servicii</a></li>
+        <li><a href="proiectare-instalare.html" class="active">Proiectare și Instalare</a></li>
+        <li><a href="beneficii-avantaje.html">Beneficii și Avantaje</a></li>
+        <li><a href="finantare-incentive.html">Finanțare și Incentive</a></li>
+        <li><a href="despre-noi.html">Despre Noi</a></li>
+        <li><a href="contact.html">Contact și Suport</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Proiectare și Instalare</h1>
+      <p>Ne ocupăm complet de tot procesul de integrare a unui sistem fotovoltaic, de la proiectare până la punerea în funcțiune.</p>
+
+      <div class="card-container">
+        <div class="card">
+          <h3>Proiectare personalizată</h3>
+          <p>Realizăm proiecte tehnice adaptate locației, consumului și bugetului tău.</p>
+        </div>
+        <div class="card">
+          <h3>Instalare panouri fotovoltaice</h3>
+          <p>Montaj rapid și sigur de către echipe specializate și certificate ANRE.</p>
+        </div>
+        <div class="card">
+          <h3>Instalare baterii și stocare</h3>
+          <p>Configurăm sisteme cu stocare inteligentă a energiei – baterii LiFePO4 și controlere de sarcină.</p>
+        </div>
+        <div class="card">
+          <h3>Întreținere și suport tehnic</h3>
+          <p>Verificări periodice, curățare, diagnoză de la distanță, intervenții rapide.</p>
+        </div>
+        <div class="card">
+          <h3>Upgrade sisteme existente</h3>
+          <p>Modernizăm și extindem sisteme deja instalate pentru performanță crescută.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nexum Energy. Toate drepturile rezervate.</p>
+  </footer>
+</body>
+</html>
