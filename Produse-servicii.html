@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produse și Servicii – Nexum Energy</title>
+  <link rel="stylesheet" href="style-dark.css">
+  <style>
+    .accordion {
+      margin: 2rem auto;
+      max-width: 800px;
+    }
+    .accordion-item {
+      background-color: #1e293b;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .accordion-title {
+      padding: 1rem;
+      cursor: pointer;
+      background: #0f172a;
+      color: #22d3ee;
+      font-weight: bold;
+    }
+    .accordion-content {
+      display: none;
+      padding: 1rem;
+      background-color: #1e293b;
+      color: #e2e8f0;
+    }
+    .accordion-item.active .accordion-content {
+      display: block;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const items = document.querySelectorAll(".accordion-item");
+      items.forEach(item => {
+        const title = item.querySelector(".accordion-title");
+        title.addEventListener("click", () => {
+          item.classList.toggle("active");
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">Nexum Energy</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="produse-servicii.html" class="active">Produse și Servicii</a></li>
+        <li><a href="proiectare-instalare.html">Proiectare și Instalare</a></li>
+        <li><a href="beneficii-avantaje.html">Beneficii și Avantaje</a></li>
+        <li><a href="finantare-incentive.html">Finanțare și Incentive</a></li>
+        <li><a href="despre-noi.html">Despre Noi</a></li>
+        <li><a href="contact.html">Contact și Suport</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Produse și Servicii</h1>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-title">Sisteme rezidențiale</div>
+          <div class="accordion-content">
+            <p>Soluții fotovoltaice pentru case, cabane, vile sau ansambluri rezidențiale, până la 10 kW, cu sau fără stocare.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-title">Sisteme pentru companii</div>
+          <div class="accordion-content">
+            <p>Instalări de mari dimensiuni pentru hale, birouri și parcuri industriale. Putere instalată între 10 kW – 999 kW.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-title">Sisteme personalizate</div>
+          <div class="accordion-content">
+            <p>Configurăm sistemul potrivit pentru nevoile tale energetice și locația ta, cu analiză de consum și eficiență.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-title">Accesorii și componente</div>
+          <div class="accordion-content">
+            <p>Invertoare, structuri de montaj, cabluri solare, protecții, sisteme de prindere, sisteme de monitorizare la distanță.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-title">Sisteme off-grid și backup</div>
+          <div class="accordion-content">
+            <p>Autonomie energetică totală pentru locații izolate sau în caz de căderi de tensiune. Incluse: baterii LiFePO4, controlere, generatoare.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nexum Energy. Toate drepturile rezervate.</p>
+  </footer>
+</body>
+</html>
