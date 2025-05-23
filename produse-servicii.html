@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Produse și Servicii – Nexum Energy</title>
   <link rel="stylesheet" href="style-dark.css">
+  <script>
+    function openPopup(id) {
+      document.getElementById(id).style.display = 'flex';
+    }
+    function closePopup(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -29,35 +37,42 @@
 
       <div class="card-container">
         <div class="card">
-          <img src="images/panou.jpg" onclick="openPopup('popup1')">
-...
-<div id="popup1" class="popup">
-  <embed src="pdf/LR_7_54_HTH_455_465_M_30_30_and_15_Frame_Explorer_20240511_V2_86a1a64e12.pdf" type="application/pdf">
-</div>
+          <img src="images/panou.jpg" onclick="openPopup('popup1')" alt="Panou Fotovoltaic">
           <h3>Panouri Fotovoltaice</h3>
           <p>Puteri între 370–550W, eficiență >21%, tehnologie bifacială/half-cell.</p>
         </div>
         <div class="card">
-          <img src="images/invertor.jpg" alt="Invertor Solar">
+          <img src="images/invertor.jpg" onclick="openPopup('popup2')" alt="Invertor Solar">
           <h3>Invertoare On-Grid și Hybrid</h3>
           <p>GoodWe, Huawei, Fronius – control WiFi și protecții integrate.</p>
         </div>
         <div class="card">
-          <img src="images/baterie.jpg" alt="Baterie Stocare">
+          <img src="images/baterie.jpg" onclick="openPopup('popup3')" alt="Baterie Stocare">
           <h3>Baterii LiFePO4</h3>
           <p>Capacitate până la 41.6 kWh, modularitate, ciclu de viață 6000+.</p>
         </div>
-        <div class="card">
-          <img src="images/structura.jpg" alt="Structuri montaj">
-          <h3>Structuri de montaj</h3>
-          <p>Suport acoperiș, sol sau carport – din aluminiu și oțel zincat.</p>
-        </div>
-        <div class="card">
-          <img src="images/accesorii.jpg" alt="Accesorii solare">
-          <h3>Accesorii și monitorizare</h3>
-          <p>Cabluri, protecții DC/AC, tablouri, contoare, gateway-uri online.</p>
+      </div>
+
+      <!-- POPUP-URI -->
+      <div id="popup1" class="popup">
+        <div class="popup-content">
+          <embed src="pdf/LR_7_54_HTH_455_465_M_30_30_and_15_Frame_Explorer_20240511_V2_86a1a64e12.pdf" type="application/pdf">
+          <button class="close-btn" onclick="closePopup('popup1')">Închide</button>
         </div>
       </div>
+      <div id="popup2" class="popup">
+        <div class="popup-content">
+          <embed src="pdf/24_-_GoodWe_EH_PLUS__EN_GW_EH_PLUS__(16A)_Datasheet.pdf" type="application/pdf">
+          <button class="close-btn" onclick="closePopup('popup2')">Închide</button>
+        </div>
+      </div>
+      <div id="popup3" class="popup">
+        <div class="popup-content">
+          <embed src="pdf/Dyness_Battery_Specs_Page15.pdf" type="application/pdf">
+          <button class="close-btn" onclick="closePopup('popup3')">Închide</button>
+        </div>
+      </div>
+
     </section>
   </main>
 
